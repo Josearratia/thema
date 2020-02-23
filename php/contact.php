@@ -16,30 +16,30 @@ $comments = $_POST['comments'];
 $verify   = $_POST['verify'];
 
 if(trim($name) == '') {
-	echo '<div class="error_message">You must enter your name.</div>';
+	echo '<div class="error_message">Debes ingresar tu nombre.</div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="error_message"> Please enter a valid email address.</div>';
+	echo '<div class="error_message"> Por favor, introduce una dirección de correo electrónico válida.</div>';
 	exit();
 } else if(trim($phone) == '') {
-	echo '<div class="error_message">Please enter a valid phone number.</div>';
+	echo '<div class="error_message">Por favor ingrese un número de teléfono válido.</div>';
 	exit();
 } else if(!is_numeric($phone)) {
-	echo '<div class="error_message">Phone number can only contain digits.</div>';
+	echo '<div class="error_message">El número de teléfono solo puede contener dígitos.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="error_message">You have enter an invalid e-mail address, try again.</div>';
+	echo '<div class="error_message">Ingresó una dirección de correo electrónico no válida, intente nuevamente.</div>';
 	exit();
 }
 
 if(trim($comments) == '') {
-	echo '<div class="error_message">Please enter your message.</div>';
+	echo '<div class="error_message">Por favor ingrese su mensaje.</div>';
 	exit();
 } else if(!isset($verify) || trim($verify) == '') {
-	echo '<div class="error_message">Please enter the verification number.</div>';
+	echo '<div class="error_message">Por favor ingrese el número de verificación.</div>';
 	exit();
 } else if(trim($verify) != '7') {
-	echo '<div class="error_message">  The verification number you entered is incorrect.</div>';
+	echo '<div class="error_message">  El número de verificación que ingresó es incorrecto.</div>';
 	exit();
 }
 
@@ -53,7 +53,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "dimagalishev@gmail.com";
+$address = "1630037@upv.edu.mx";
 
 
 // Configuration option.
@@ -61,7 +61,7 @@ $address = "dimagalishev@gmail.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You\'ve been contacted by ' . $name . '.';
+$e_subject = 'Has sido contactado por ' . $name . '.';
 
 
 // Configuration option.

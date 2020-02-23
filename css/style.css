@@ -275,7 +275,7 @@ blockquote p {
 	left:0;
 	width:100%;
 	height:100%;
-	background:#000;
+	background:#bd42d4ad;
 	opacity:0.2;
 	z-index:2;
 }
@@ -586,7 +586,7 @@ header {
 	left:50%;
 }
 .enter-wrap {
-	float:left;
+	float: right;
 	width:100%;
 }
 .enter-wrap h3 {
@@ -1312,7 +1312,7 @@ footer {
 	left:0;
 	width:0;
 	height:100%;
-	background:#fff;
+	background:rgba(5,0,0,0.5);
 	z-index:-1;
 	-webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
